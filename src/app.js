@@ -37,4 +37,4 @@ try {
 } catch (err) {}
 
 exports.dayOfTheWeek = dayOfTheWeek;
-exports.dayOfTheYear = monthOfTheYear;
+exports.monthOfTheYear = monthOfTheYear;
