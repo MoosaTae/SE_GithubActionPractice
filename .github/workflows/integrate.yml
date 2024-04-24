@@ -1,0 +1,17 @@
+name: Node Continuous Integration
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  pull_request:
+    runs-on: ubuntu-lastest
+    steps:
+      - uses: actions/checkout@4
+      - uses: actions/setup-node@4
+        with:
+          node-version: 21
+      - run: npm ci
+      - run: npm start
+      - run: npm run build
